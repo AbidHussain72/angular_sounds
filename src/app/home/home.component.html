@@ -1,0 +1,66 @@
+<div class="container">
+<div class="row mt-3">
+  <div class="col-12">
+    <div class="card mb-3 bg-light bg-gradient">
+      <img src="assets/images/ya_ali_as.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-primary">Laylat-al-Qadr<span>  23 ramdhan 1444</span> </h5>
+        <p class="card-text text-secondary">The Night of Power (Arabic: لیلة القدر, romanized: Laylat al-Qadr), also rendered as the Night of Destiny, Night of Decree, or Night of Determination, also the Precious Night, the night when the Quran was first sent down from Heaven to the world and also the night when the first verses of the Quran were revealed to the  prophet Muhammad SAWW; it is described to be better than a thousand months of worshipping.</p>
+        <p class="card-text text-danger"> <strong> YA ALI AS</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row rounded-bottom">
+  <div class="col-6">
+  
+    <div class="card text-dark bg-light bg-gradient mb-3 shadow-sm" >
+      <div class="card-header d-flex justify-content-center align-items-center"><strong>Prayer Time</strong> </div>
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center"><strong class="bg-primary bg-gradient shadow-sm rounded-1 p-2 text-light">Saturday, 24 Ramadhan 1444 </strong> <strong class="bg-light bg-gradient border rounded-1 p-2 text-dark text-center">{{currentDateByName}} <br><span class="display-5">{{currentDate}}</span> </strong></div>
+        
+        <h5 class="card-title d-flex justify-content-between align-items-center p-2">Your Current Location <span class=" p-2 rounded-2 bg-light bg-gradient border shadow-sm"> {{location?.city}}</span></h5>
+          <ul class="list-group ">
+            <li class="list-group-item bg-secondary bg-gradient text-light d-flex justify-content-between align-items-center">
+              Imsak (Sehar)
+              <span class="badge bg-primary bg-gradient shadow rounded-pill">04:35 am</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Fajr
+              <span class="badge bg-primary bg-gradient shadow rounded-pill">04:45 am</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Sunrise
+              <span class="badge bg-primary bg-gradient shadow rounded-pill">06:02 am</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Dhuhr
+              <span class="badge bg-primary bg-gradient shadow rounded-pill">12:31 pm</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Sunset
+              <span class="badge bg-primary bg-gradient shadow rounded-pill">07:01 pm</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Maghrab
+              <span class="badge bg-primary bg-gradient shadow rounded-pill">07:17 pm</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+             Midnight
+              <span class="badge bg-primary bg-gradient shadow rounded-pill">11:53 pm</span>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+    <div class="col-6">
+      <div class="card text-dark bg-light bg-gradient mb-3">
+        <div class="card-header fw-bold">Ramadhan</div>
+        <div class="card-body">
+          
+          <full-calendar [options]="calendarOptions"></full-calendar>
+        </div>
+    </div>
+</div>
+
+</div>

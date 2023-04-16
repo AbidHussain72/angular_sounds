@@ -1,0 +1,24 @@
+<nav class="navbar sticky-top navbar-expand-lg tnavbar-light bg-primary bg-gradient customNav">
+  <div class="container d-flex align-items-center">
+    <a class="navbar-brand text-light" href="#">Shia World</a>
+    
+      <div class="d-flex col-1 pr-3 ms-auto justify-content-end align-items-center">
+        <a class="btn btn-sm rounded-1 bg-dark bg-gradient text-light ms-1 " routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Home"><i class="fa-solid fa-house"></i></a>
+        <a class="btn btn-sm rounded-1 bg-dark bg-gradient text-light ms-1" routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="About"><i class="fa-solid fa-circle-info"></i></a>
+        <a class="btn btn-sm rounded-1 bg-dark bg-gradient text-light ms-1" routerLink="/chat" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Chat"><i class="fa-solid fa-comment"></i></a>
+        <a class="btn btn-sm rounded-1 bg-dark bg-gradient text-light ms-1" routerLink="/help-me" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Help?"><i class="fa-solid fa-question"></i></a>
+        <a class="btn btn-sm rounded-1 bg-dark bg-gradient text-light ms-1" routerLink="/audio" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Audio"><i class="fa-solid fa-music"></i></a>
+        <button class="btn btn-sm btn-dark bg-gradient ms-1 " data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="All Options" data-bs-toggle="offcanvas" data-bs-target="#offcanvasId"><i class="fa-solid fa-bars" ></i></button>
+        <ng-container *ngIf="isLogin">
+          <button type="button" class="btn btn-sm btn-dark bg-gradient " data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title=""> <i class="fa-solid fa-circle-user"></i></button>
+        </ng-container>
+        <ng-container *ngIf="!isLogin" class="">
+          <button type="button" class="btn btn-sm btn-dark bg-gradient ms-1 " data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Login "> <i class="fa-solid fa-right-to-bracket"></i></button>
+        </ng-container>
+      </div>
+      
+    <!-- </div> -->
+  </div>
+</nav>
+
+<!-- Offcanvas panel -->

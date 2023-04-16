@@ -1,0 +1,8 @@
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-light);
+}
+.active{
+  background-color: #3e3e3ee0 !important;
+  color: #fff !important;
+  transition:all .5s ease;
+}
