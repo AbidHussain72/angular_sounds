@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommanService } from '../comman.service';
 import { DatePipe } from '@angular/common';
 import interactionPlugin from '@fullcalendar/interaction';
-import { CalendarOptions } from '@fullcalendar/core'; // useful for typechecking
+import { CalendarOptions } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 
 

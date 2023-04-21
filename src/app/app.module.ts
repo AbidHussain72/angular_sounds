@@ -21,6 +21,8 @@ import {HttpClientModule} from '@angular/common/http'
 import * as moment from 'moment';
 import { DatePipe } from '@angular/common';
 import { HolyQuranComponent } from './holy-quran/holy-quran.component';
+import {AngularFireModule} from '@angular/fire/compat';
+import { MyComponentComponent } from './my-component/my-component.component';
 
 export function momentAdapterFactory() {
   return adapterFactory(moment);
@@ -37,7 +39,8 @@ export function momentAdapterFactory() {
     PageNoFoundComponent,
     SidebarComponent,
     CalanderComponent,
-    HolyQuranComponent
+    HolyQuranComponent,
+    MyComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -56,3 +59,4 @@ export function momentAdapterFactory() {
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
